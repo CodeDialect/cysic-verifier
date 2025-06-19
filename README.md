@@ -1,6 +1,6 @@
 # 🛠️ CYSIC Phase 3 Verifier Auto Installer
 
-This script automates the setup of the [CYSIC Phase 3 Verifier](https://github.com/cysic-labs/cysic-phase3) on Linux. It prompts for your reward address, runs the official setup, and launches the verifier in a background `screen` session.
+This script automates the setup of the [CYSIC Phase 3 Verifier sign up here](https://cysic.xyz/zk/verifier) use invite code `0d07f` on Linux. It prompts for your reward address, runs the official setup, and launches the verifier in a background `screen` session.
 
 ---
 
