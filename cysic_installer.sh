@@ -48,7 +48,7 @@ if ! command -v pm2 &> /dev/null; then
   npm install -g pm2
 fi
 # === Create instances ===
-BASE_DIR="/mnt/0g/cysic_instances"
+BASE_DIR="$HOME/cysic_instances"
 mkdir -p "$BASE_DIR"
 for i in $(seq 1 $COUNT); do
   INSTANCE="node$i"
