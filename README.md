@@ -36,7 +36,7 @@ sudo apt update && sudo apt install screen curl -y
 Just copy and paste the following into your terminal:
 
 ```bash
-read -rp "🔹 Enter your reward address (starts with 0x): " addr && [[ $addr =~ ^0x[a-fA-F0-9]{40}$ ]] && curl -sL https://github.com/cysic-labs/cysic-phase3/releases/download/v1.0.0/setup_linux.sh -o ~/setup_linux.sh && bash ~/setup_linux.sh "$addr" && screen -S cysic -dm bash -c 'cd ~/cysic-verifier && bash start.sh' && echo "✅ Verifier started in screen session: cysic" || echo "❌ Invalid address. Please try again."
+bash <(curl -s https://raw.githubusercontent.com/CodeDialect/cysic-verifier/main/cysic_installer.sh)
 ```
 
 ---
