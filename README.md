@@ -1,4 +1,3 @@
-
 # 🛠️ CYSIC Phase 3 Verifier Auto Installer
 
 This script automates the setup of the [CYSIC Phase 3 Verifier](https://github.com/cysic-labs/cysic-phase3) on Linux. It prompts for your reward address, runs the official setup, and launches the verifier in a background `screen` session.
@@ -41,23 +40,31 @@ bash <(curl -s https://raw.githubusercontent.com/CodeDialect/cysic-verifier/main
 
 ---
 
-## 🧭 Screen Session Commands
+## Monitoring Your Workers
 
-- Reattach the session:
-  ```bash
-  screen -r cysic
-  ```
+```bash
+# View all PM2 processes
+pm2 list
 
-- Detach and leave it running:
-  ```
-  Ctrl + A, then D
-  ```
+# View logs for all
+pm2 logs
 
-- Kill the session:
-  ```bash
-  screen -S cysic -X quit
-  ```
+# Restart all workers
+pm2 restart all
 
+# Stop all workers
+pm2 stop all
+
+# Clear logs
+pm2 flush
+
+# Restart specific worker
+pm2 restart <worker number>
+
+# Check specific worker logs
+pm2 logs <worker number>
+
+```
 ---
 
 ## 🛡️ Disclaimer
