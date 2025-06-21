@@ -71,4 +71,3 @@ done
 pm2 save
 echo -e "${GREEN}✅  All $COUNT verifier node(s) started with PM2!${NC}"
 echo -e "${YELLOW}Use 'pm2 list' and 'pm2 logs' to monitor.${NC}"
-""
